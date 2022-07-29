@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap" rel="stylesheet">
+	<title>Ejercicio 4</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="grid-container">	
+	<header class="header">
+		<div class="logo"></div>
+		<h1>La tiendita de Jade</h1>
+	</header>
+	<nav class="nav">NAVBAR
+		<div class="navigation">
+			<button id="sized" class="menu">
+			  <span></span>        
+			</button>
+			  <div id="myModal" class="modal">
+			  <!-- Modal content -->
+				<div class="modal-content animated           zoomIn">
+				<div class="modal-header">
+				   <span class="close">×</span>
+			   </div>
+				  
+			  <div class="modal-body nav">
+				 <ul>
+				   <li><a href="#">Inicio</a></li>
+				   <li><a href="#">Productos</a></li>
+				   <li><a href="#">Servicios</a></li>
+				   <li><a href="#">Contacto</a></li>
+				  </ul>
+				</div>
+	</nav>
+	<aside class="sidebar">ASIDE</aside>
+	<article class="main">ARTICULO</article>
+	<footer class="footer">FOOTER</footer>
+	<script>
+		// Get Modal
+	var modal = document.getElementById('myModal');
+    
+	// Get pseudoelement to open Modal
+	var btn = document.getElementById("sized");
+	
+	// Get the <span> element to close Modal
+	var span = document.getElementsByClassName("close")[0];
+	
+	// When user clicks button, open Modal
+	btn.onclick = function() {
+	   modal.style.display = "block";
+	   };
+	
+	// When user clicks Close (x), close Modal
+	span.onclick = function() {
+	   modal.style.display = "none";
+	   };
+	
+	// When user clicks anywhere outside of the Modal, close Modal
+	 window.onclick = function(event) {
+		if (event.target == modal) {
+		   modal.style.display = "none";
+		   }
+		}
+	</script>
+</body>
+</html>
