@@ -20,7 +20,7 @@ body {
 }
 .header {
 	grid-area: header;
-	background-color: #ffa007
+	background-color: #ffa007;
 }
 .navbar {
 	grid-area: navbar;
@@ -36,7 +36,7 @@ body {
 }
 .footer {
 	grid-area: footer;
-	background-color: #ddd;
+	background-color: #ffa007;
 }
 .grid-container {
 	display: grid;
@@ -137,6 +137,11 @@ h1 {
     background-image: url(../assets/logo.png);
     background-repeat: no-repeat;
     background-size:cover;
+}
+h4 {
+    color: #ffa007;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
 }
 
 @media (min-width: 600px) {
