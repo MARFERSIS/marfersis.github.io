@@ -51,31 +51,39 @@ body {
 
 header img {
 	position: relative;
-    height: 300px;
-    top: -50px;
+    height: 120px;
+    top: 5px;
+}
+
+@media (min-width: 400px) {
+	.grid-container {
+	grid-template:
+    "header" 220px
+    "navbar" 50px
+    "main" 500px
+    "sidebar" 50px
+    "footer" 50px 
+	}
 }
 
 @media (min-width: 600px) {
 	.grid-container {
 	grid-template:
-		"header header" 150px
+		"header header" 220px
 		"navbar navbar" 50px
 		"sidebar main" auto
 		"footer footer" 100px /
 		200px	auto;
-
-
 	}
 }
 
 @media (min-width: 900px) {
 	.grid-container {
 	grid-template:
-		"header header header" 150px
+		"header header header" 220px
 		"navbar main sidebar" auto
 		"footer footer footer" 100px /
-		200px	auto	200px;
-
+		200px	auto	200px
 
 	}
 }
