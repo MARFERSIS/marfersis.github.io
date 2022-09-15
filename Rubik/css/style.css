@@ -163,6 +163,15 @@ nav a:active {
     border-top-color: #F87171;
     background: #F87171;
     color: #00324b;
+    transform: scale(1.2);
+}
+.end-gallery {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #00324b;
+    top: 400px;
+    left: 0;
 }
 footer {
 	width: 100%;
@@ -183,4 +192,18 @@ img{
 }
 .circulo {
 	clip-path: circle(45% at 50% 50%);
+}
+.contacto {
+    width: 100%;
+    height: 300px;
+}
+.contacto h4 {
+    text-align: center;
+    margin-top: 10px;
+}
+.redes-wp {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;   
 }
