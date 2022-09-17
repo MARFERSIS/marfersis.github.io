@@ -73,7 +73,8 @@ body {
 
   ul{
     position: absolute;
-    margin-top: 30%;
+    margin-top: 20%;
+    margin-bottom: 0;
     padding: 15;
     width: 100%;
   }
@@ -87,14 +88,14 @@ body {
     list-style: none;
     border: 4px solid transparent;
     text-align: center;
-    height: 35px;
-    margin-bottom: 10px;
+    height: 100px;
+    margin-bottom: 5px;
   }
 
 
 
   li a {
-    margin-top: 10px;
+    margin-top: 40px;
     display: block;
     text-decoration: none;
     color: var(--Background-page);
@@ -129,7 +130,9 @@ body {
  }
 
   header {
-  background-color: var(--Background-page);
+  background-image: url(../img/fondo-hd.jpg);
+  background-size: 300%;
+  background-position-x: -200px;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -188,15 +191,16 @@ img {
   object-fit:contain;
 }
 h1 {
+  background-color: #123;
+  color: #123;
   margin-top: 40px;
+  box-shadow: 5px 5px 5px 5px rgba(50, 44, 44,0.7);
 }
 h1, h2, h3 {
   color: var(--text-color);
   font-weight: 200;
 }
-h2 {
-  font-size: 0.8rem;
-}
+
 header h3 {
   position: relative;
 }
@@ -204,7 +208,7 @@ h3 span {
   position: absolute;
   right: 0;
   width: 0;
-  background-color: var(--Background-page);
+  background-color: rgb(50, 44, 44);
   border-left: 1px solid var(--text-color);
   white-space: hidden;
   animation: maquina 5s infinite steps(19);
@@ -227,6 +231,7 @@ h3 span {
 
 /* ------------------------------flechas -----------------*/
 .arrow {
+  margin-top: 20px;
   height: 40px;
   width: 60px;
   background-color: var(--arrow-color);
@@ -253,12 +258,12 @@ h3 span {
 section h2 {
   color: var(--text-color);
   padding-top: 40px;
-  font-size: 2em;
+  font-size: 1.5rem;
 }
 
 .hard-skills, 
 .soft-skills {
-  height: 40%;
+  height: 30%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -266,8 +271,8 @@ section h2 {
 }
 
 .alt-img {
-  width: 85px;
-  height: 85px;
+  width: 60px;
+  height: 60px;
   flex: 0 0 33.33334%;
   display: flex;
   flex-flow: column nowrap;
@@ -275,8 +280,8 @@ section h2 {
   align-items: center;
 }
 .alt-img img {
-  height: 75px;
-  width: 75px;
+  height: 60px;
+  width: 60px;
   justify-content: center;
   align-items: center;
   filter: brightness(80%);
@@ -284,20 +289,20 @@ section h2 {
 }
 
 .alt-img h6 {
-  font-size: 15px;
-  color: red;
+  font-size: 12px;
+  color: var(--text-color);
   z-index: 20;
   visibility: hidden;
 }
 .alt-img:hover img{
   filter: brightness(50%);
-  filter: drop-shadow(0px 5px 10px rgb(27, 27, 29));
+  filter: drop-shadow(0px 5px 10px rgb(0,0,0));
 }
 .alt-img:hover h6 {
   display: inline-block;
   filter: brightness(100%);
   background-color: var(--background-text);
-  transform:translateY(45px);
+  transform:translateY(40px);
   visibility: visible;
   text-align: center;
   transition: all 0.5s ease-in-out;
