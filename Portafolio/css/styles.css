@@ -1,8 +1,8 @@
 :root {
-  --Background-page: #ccc;
-  --text-color: #123;
-  --arrow-color: #456;
-  --background-text: #eee;
+  --Background-page: #123;
+  --text-color: #ddd;
+  --arrow-color: #eee;
+  --background-text: #123;
 }
 html {
   scroll-behavior: smooth;
@@ -17,11 +17,16 @@ html {
 *::before {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 body {
-  
-  background-color: var(--Background-page);
+  background-image: linear-gradient (
+  to bottom right,
+  #9664bb 80%,
+  #6f37a4 40%,
+  #1a25af 60%,
+  );
+  background-size: 200% 200%;
 }
 .separador {
   background-color: var(--Background-page);
@@ -65,60 +70,41 @@ body {
   }
 
   /* Estilo del boton cuando el menú está expandido*/
-  /*input:checked ~ label{
-    background: lightgrey; 
-  }
-  */
+
   ul{
     position: absolute;
-    margin-top: 65%;
+    margin-top: 30%;
     padding: 15;
     width: 100%;
-    /*height: 300px;*/
-    opacity: 90%;
-  }
-
-  li:before {
-    background-color: #ddd;
   }
   
   li {
     display: block;
-    background: #123;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
     padding: 10px;
     list-style: none;
     border: 4px solid transparent;
     text-align: center;
     height: 35px;
     margin-bottom: 10px;
-    box-shadow: 0px 5px 5px 2px rgba(0, 14, 33, 0.7);
-    animation: menu 1s infinite alternate;
   }
-  @-webkit-keyframes menu {
-    0% {
-      box-shadow: 10px 15px 15px 5px rgba(0, 14, 33, 0.7);
-    
-    }
-    100% {
-      box-shadow: -10px 10px 10px 2px rgba(0, 14, 33, 0.7);
 
-  }
-  }
+
 
   li a {
-    display: inline-block;
+    margin-top: 10px;
+    display: block;
     text-decoration: none;
-    color: #fff;
-    font-size: 1.5rem;
-    -webkit-text-stroke: -1px #123;
-    opacity: 150%;
+    color: var(--Background-page);
+    font-size: 1.0rem;
+    z-index: 20;
   }
 
 
   /*Estilo cuando el mouse pasa encima de cada link del menu*/
-  li:active {
-    filter: brightness(150%);
-  }
+
 
   /* ---------------------------------   fin menu hambuerguesa ----------------------------*/
  
@@ -201,34 +187,41 @@ img {
   border-radius: 50%;
   object-fit:contain;
 }
-
+h1 {
+  margin-top: 40px;
+}
 h1, h2, h3 {
-  margin-top: 25px;
   color: var(--text-color);
+  font-weight: 200;
 }
-h1, h2 {
-  -webkit-text-stroke: #123 1px;
+h2 {
+  font-size: 0.8rem;
 }
-
 header h3 {
   position: relative;
-  -webkit-text-stroke: #123 1px;
 }
 h3 span {
   position: absolute;
   right: 0;
   width: 0;
   background-color: var(--Background-page);
-  border-left: 1px solid #ddd;
-  animation: maquina 4s infinite alternate steps(20);
+  border-left: 1px solid var(--text-color);
+  white-space: hidden;
+  animation: maquina 5s infinite steps(19);
 }
 
 @keyframes maquina {
-  from {
+  0% {
     width: 100%;
   }
-  to {
-    width: 1;
+  50% {
+    width: 0;
+  }
+  75% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }
 
