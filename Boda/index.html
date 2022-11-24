@@ -20,7 +20,7 @@
 			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 			        <li class="nav-item">
-			          <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+			          <a class="nav-link active" aria-current="page" href="#home">Home</a>
 			        </li>
 			        <li class="nav-item">
 			          <a class="nav-link" href="#ceremony">Ceremonia</a>
@@ -139,27 +139,76 @@
 		<h2 class="text-center">CELEBRACION</h2>
 
 		<!-- Button trigger modal -->
-<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-	Lugar, Dia y Horario
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h5 class="modal-title" id="exampleModalLabel">Lugar, Dia y Horario</h5>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	<div class="row mt-5">
+		<div class="col-3"></div>
+
+		<div class="col-6">
+			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#lugaryfecha">
+				Lugar, Dia y Horario
+			</button>
 		</div>
-		<div class="modal-body">
-		  <p>Salon de Eventos Ibiza <a href="https://www.google.com.ar/maps/@-31.4014689,-58.0098869,19.96z">¿Como llegar?</a></p>
-		</div>
-		<div class="modal-footer">
-		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-		</div>
-	  </div>
-	</div>
-  </div>
+
+		<div class="col-3"></div>
+  	</div>
+		<!-- Modal Lugar Fecha y hora de evento-->
+
+			<div class="modal fade" id="lugaryfecha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel"></h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+					<p class="text-center">Celebramos nuestro casamiento en Salon Ibiza <i>(Colon Nº 141)</i> <a href="https://www.google.com.ar/maps/@-31.4014689,-58.0098869,19.96z">¿Como llegar?</a></p>
+					<p class="text-center">EL día Sábado 04/03/2023 a las 22hs</p>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+				</div>
+			</div>
+
+			<div class="row mt-5">
+				<div class="col-3"></div>
+		
+				<div class="col-6">
+					<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#tarjeta">
+						Tarjeta
+					</button>
+				</div>
+		
+				<div class="col-3"></div>
+			  </div>
+				<!-- Modal Lugar Fecha y hora de evento-->
+		
+					<div class="modal fade" id="tarjeta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel"></h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+							<p class="text-center">Tu presencia será nuestro mayor regalo. Por eso, te pedimos que abones tu tarjeta.
+
+								Valores: $6.000 (mayores)  $3000 (Menores de 3 a 8 Años)
+								
+								Podés abonar mediante transferencia bancaria al
+								CBU: 0170068840000034166400
+								ALIAS: SIL.MARCOS
+								Antes del 15/02.
+								
+								Importante: necesitamos que confirmes asistencia antes del 15/01 con una seña del 10% de la tarjeta.</p>
+							</div>
+							<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+							</div>
+						</div>
+						</div>
+					</div>
+
 
 
 	</section>

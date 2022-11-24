@@ -6,7 +6,7 @@
 }
 
 .navbar-brand {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-family: cursive;
 	color: #FFBF83;
 }
@@ -14,6 +14,7 @@ h1 {
 	font-family: serif;
 	color: #5b8465;
 	font-weight: bold;
+	font-size: 2.2rem;
 }
 h2 {
 	margin-top: 100px;
@@ -64,4 +65,11 @@ p {
 #fest .btn {
 	background-color: #FFBF83;
 	color: #fff;
+}
+#home p {
+	font-size: 1.3rem;
+}
+.modal-body p {
+	font-size: 1.5rem;
+	color: #5b8465;
 }
