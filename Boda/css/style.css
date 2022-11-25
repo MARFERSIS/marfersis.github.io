@@ -21,7 +21,7 @@ h2 {
 	font-family: serif;
 	color: #5b8465;
 	font-weight: bold;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 }
 p {
 	font-family: cursive;
@@ -72,4 +72,15 @@ p {
 .modal-body p {
 	font-size: 1.5rem;
 	color: #5b8465;
+}
+footer {
+	background-color: #5b8465;
+}
+footer p {
+	padding-top:25px;
+	padding-bottom: 25px;
+	color: #fff;
+}
+.separador {
+	height: 150px;
 }
