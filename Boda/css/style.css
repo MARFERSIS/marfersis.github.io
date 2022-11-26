@@ -1,5 +1,5 @@
 body {
-	font-family: 'Cardo', serif;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .flor3, .flor4 {
 	height: 85px;
@@ -85,5 +85,5 @@ footer p {
 	color: #fff;
 }
 .separador {
-	height: 150px;
+	height: 120px;
 }
