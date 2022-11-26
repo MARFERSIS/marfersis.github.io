@@ -84,6 +84,20 @@ footer p {
 	padding-bottom: 25px;
 	color: #fff;
 }
-.separador {
+.separador-a, 
+.separador-b, 
+.separador-c,
+.separador-d {
 	height: 120px;
+	object-fit: scale-down;
+}
+.separador-a img, 
+.separador-b img, 
+.separador-c img,
+.separador-d img{
+	height: 100px;
+}
+.separador-b img, 
+.separador-d img {
+	float: right;
 }
