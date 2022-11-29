@@ -1,5 +1,6 @@
-body {
-	font-family: Georgia, 'Times New Roman', Times, serif;
+a.navbar-brand {
+	/*font-family: Georgia, 'Times New Roman', Times, serif !important;*/
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 .flor3, .flor4 {
 	height: 85px;
